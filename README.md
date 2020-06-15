@@ -37,15 +37,15 @@ The Database schema consists of a star schema, in which however not all of the p
 - columns: FL_DATE (PRIMARY KEY),FL_YEAR,FL_QUARTER,FL_MONTH,DAY_OF_MONTH,DAY_OF_WEEK
 
 #### Other 
-1. dep_perfs
+1. **dep_perfs**
 - columns: ID_KEY (PRIMARY KEY),CRS_DEP_TIME,DEP_TIME,DEP_DELAY,DEP_DELAY_NEW,DEP_DEL15,DEP_DELAY_GROUP,DEP_TIME_BLK,TAXI_OUT,WHEELS_OFF
-2. arr_perfs
+2. **arr_perfs**
 - columns: ID_KEY (PRIMARY KEY),WHEELS_ON,TAXI_IN,CRS_ARR_TIME,ARR_TIME,ARR_DELAY,ARR_DELAY_NEW,ARR_DEL15,ARR_DELAY_GROUP,ARR_TIME_BLK   
-3. summaries
+3. **summaries**
 - columns: ID_KEY (PRIMARY KEY),CRS_ELAPSED_TIME,ACTUAL_ELAPSED_TIME,AIR_TIME,FLIGHTS,DISTANCE,DISTANCE_GROUP
-4. gate_info
+4. **gate_info**
 - columns: ID_KEY (PRIMARY KEY),FIRST_DEP_TIME,TOTAL_ADD_GTIME,LONGEST_ADD_GTIME
-5. diversions
+5.**diversions**
 - columns: all the remaining columns in the .csv files
 
 The Entity Relation Diagram is as follows
@@ -121,7 +121,7 @@ which counts the number of occurrencies of each type of delay, both for each of 
 In order to compare companies, we display two heatmaps:
 - the first one showing the percentages of causes of delays, for each company and overall
 - the second one showing the ```totalflights``` and the ```totaldelays``` for each carrier
-
+And also some pie plots and bar charts.
 
 Part two of the analysis consists of a comparison of the American Airlines data from the ones collected among all carriers, and focuses on the delay causes that are imputable to the carrier, i.e. ```carrier_delay``` and ```late_aircraft_delay```. For each of the two delays, we plot the distribution of delay minutes, for both AA and in general, and also display some statistically relevant figures:
 - median
