@@ -215,7 +215,7 @@ CREATE TABLE IF NOT EXISTS dep_perfs(
     DEP_TIME_BLK             VARCHAR, 
     TAXI_OUT                 FLOAT,
     WHEELS_OFF               FLOAT
-);
+);aIR
 """
 arr_perf_table_create =  """
 CREATE TABLE IF NOT EXISTS arr_perfs (

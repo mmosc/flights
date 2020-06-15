@@ -24,7 +24,7 @@ In addition to the data files, there are six files:
 The Database schema consists of a star schema, in which however not all of the periferic tables are dimension tables. The database contains the following tables
 #### Fact Tables 
 1. **flights** 
-- columns:     ID_KEY (PRIMARY KEY),FL_DATE, OP_UNIQUE_CARRIER,TAIL_NUM,OP_CARRIER_FL_NUM,BIGINT,ORIGIN_AIRPORT_ID,BIGINT,DEST_AIRPORT_ID,BIGINT,CANCELLED,FLOAT,CANCELLATION_CODE,VARCHAR,DIVERTED,FLOAT,CARRIER_DELAY,FLOAT,WEATHER_DELAY,FLOAT,NAS_DELAY,FLOAT,SECURITY_DELAY,FLOAT,LATE_AIRCRAFT_DELAY,FLOAT
+- columns:     ID_KEY (PRIMARY KEY),FL_DATE, OP_UNIQUE_CARRIER,TAIL_NUM,OP_CARRIER_FL_NUM,ORIGIN_AIRPORT_ID,DEST_AIRPORT_ID,CANCELLED,FLOAT,CANCELLATION_CODE,VARCHAR,DIVERTED,FLOAT,CARRIER_DELAY,FLOAT,WEATHER_DELAY,FLOAT,NAS_DELAY,FLOAT,SECURITY_DELAY,FLOAT,LATE_AIRCRAFT_DELAY,FLOAT
 
 
 #### Dimenson Tables
@@ -49,7 +49,7 @@ The Database schema consists of a star schema, in which however not all of the p
 - columns: all the remaining columns in the .csv files
 
 The Entity Relation Diagram is as follows
-![alt text](./fligths_schema.png)
+![alt text](./star_schema.png)
 
 The diagram is generated using [Visual Paradigm](https://online.visual-paradigm.com/diagrams/features/erd-tool/). Primary keys are in bold font. I did not manage to do-undo italics to distinguish numerical entries...
 
